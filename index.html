@@ -5,23 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meta IoT</title>
+        <meta name="keywords" content="IoT, Web Application Development, Mobile APP, ARDUINO UNO, META, Iot Integration">
+    <meta name="author" content="Kushal Kulle">
     <style>
         *{
             margin: 0;
             padding: 0;
         }
-        .homepage{
+        .meta {
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             background-color: antiquewhite;
             font-family: monospace;
-
         }
     </style>
 </head>
 <body>
-    <h1 class="homepage">Meta IoT</h1>
+    <h1 class="meta">
+        Meta IoT
+    </h1>
+
+     
+    <script>
+        var div =
+            document.querySelector(".meta");
+  
+        div.addEventListener(
+            "mousemove", function (e) {
+                x = e.offsetX;
+                y = e.offsetY;
+                div.style.backgroundColor
+                    = `rgb(${x}, ${y}, ${ y-x})`;
+            });
+    </script>
 </body>
 </html>
+
